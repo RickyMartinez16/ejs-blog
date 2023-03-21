@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     //render the home ejs file
-    res.render("home")
+    res.render("home", {homeContent: homeStartingContent})
 })
 
 
