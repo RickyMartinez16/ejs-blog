@@ -20,9 +20,15 @@ app.get("/", (req, res) => {
     res.render("home", {homeContent: homeStartingContent})
 })
 
+app.get("/about", (req, res) => {
+    //render the about ejs file
+    res.render("about", {aboutContent: aboutContent})
+})
 
-
-
+app.get("/contact", (req, res) => {
+    //render the contact ejs file
+    res.render("contact", {contactContent: contactContent})
+})
 
 
 
