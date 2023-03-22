@@ -30,6 +30,12 @@ app.get("/contact", (req, res) => {
     res.render("contact", {contactContent: contactContent})
 })
 
+app.get("/compose", (req, res) => {
+    //render the contact ejs file
+    res.render("compose")
+})
+
+
 
 
 
