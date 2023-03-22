@@ -3,6 +3,18 @@
 
 <h1>Compose</h1>
 
+<!-- submit form -->
+<form class="newPost" action="/" method="post">
+  <label for="fname"></label><br />
+  <input
+    type="text"
+    id="newBlogPost"
+    name="newBlogPost"
+    placeholder="new blog"
+    autocomplete="off"
+  /><br />
+  <button  class="publishButton" type="submit" name="list" value="" %>>Publish</button>
+</form>
 
 <!-- ejs syntaxx to include footer template on all list pages -->
 <%- include("partials/footer"); -%>
