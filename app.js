@@ -37,8 +37,9 @@ app.get("/compose", (req, res) => {
 
 app.post("/compose", (req, res) => {
     let blog = req.body.newBlogPost
-
+    let title = req.body.newBlogTitle
     console.log(blog)
+    console.log(title)
 
     res.redirect("/")
 })
