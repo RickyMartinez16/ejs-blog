@@ -35,6 +35,14 @@ app.get("/compose", (req, res) => {
     res.render("compose")
 })
 
+app.post("/compose", (req, res) => {
+    let blog = req.body.newBlogPost
+
+    console.log(blog)
+
+    res.redirect("/")
+})
+
 
 
 
