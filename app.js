@@ -37,7 +37,7 @@ app.get("/compose", (req, res) => {
 
 app.post("/compose", (req, res) => {
     
-    let post = {
+    const post = {
         blog: req.body.newBlogPost,
         title: req.body.newBlogTitle
     }
