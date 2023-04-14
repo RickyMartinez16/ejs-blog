@@ -40,7 +40,6 @@ app.post("/compose", (req, res) => {
     let title = req.body.newBlogTitle
     console.log(blog)
     console.log(title)
-    
 
     res.redirect("/")
 })
