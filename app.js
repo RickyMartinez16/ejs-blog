@@ -41,8 +41,8 @@ app.get("/compose", (req, res) => {
 app.post("/compose", (req, res) => {
     
     const post = {
-        blog: req.body.newBlogPost,
-        title: req.body.newBlogTitle
+        title: req.body.newBlogTitle,
+        blog: req.body.newBlogPost
     }
     posts.push(post)
 
