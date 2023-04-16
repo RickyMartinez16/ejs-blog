@@ -35,7 +35,7 @@ app.get("/posts/:postId", (req, res) => {
         const storedTitle = _.lowerCase(posts[i].title)
 
         if(inputtedParam === storedTitle ){
-            res.render("post", {title: storedTitle, body: posts[i].blog})
+            res.render("post", {title: posts[i].title, body: posts[i].blog})
         }
     } 
 })
