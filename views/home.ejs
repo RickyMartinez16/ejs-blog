@@ -11,7 +11,12 @@
    <% console.log(posts[i].title) %>
 <% } %> -->
 
-<% posts.forEach(post => console.log(post.title)) %>
+<!-- <% posts.forEach(post => console.log(post.title)) %> -->
+
+<% posts.forEach(function(post){ 
+    
+    console.log(post.title)
+ }) %>
 
 <!------ ejs syntaxx to include footer template on all list pages ---->
 <%- include("partials/footer"); -%>
