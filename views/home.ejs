@@ -5,6 +5,10 @@
 
 <p><%= homeContent %></p>
 
-<% console.log(posts) %>
+<!-- <% console.log(posts) %> -->
+
+<%for(let i = 0; i < posts.length; i++){
+    console.log(posts[i].title)
+} %>
 <!------ ejs syntaxx to include footer template on all list pages ---->
 <%- include("partials/footer"); -%>
