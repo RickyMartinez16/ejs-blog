@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/posts/:postId", (req, res) => {
-
+//use params to get the inputted paramer
     const inputtedParam = _.lowerCase(req.params.postId);
 
     for(let i = 0; i < posts.length; i++){
