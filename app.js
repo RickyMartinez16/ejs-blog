@@ -34,8 +34,7 @@ app.get("/posts/:postId", (req, res) => {
         if(inputtedParam === storedTitle ){
             console.log("match found")
         }
-    }
-    // console.log(req.params.postId)    
+    } 
 })
 
 app.get("/about", (req, res) => {
