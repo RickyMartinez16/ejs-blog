@@ -24,8 +24,12 @@ app.get("/", (req, res) => {
 })
 
 app.get("/posts/:postId", (req, res) => {
-    console.log(req.params.postId)
-    
+    for(let i = 0; i < posts.length; i++){
+        if(req.params.postId === posts[i].title){
+            console.log("match found")
+        }
+    }
+    // console.log(req.params.postId)    
 })
 
 app.get("/about", (req, res) => {
