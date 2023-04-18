@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
 
 app.get("/posts/:postId", (req, res) => {
     console.log(req.params.postId)
+    
 })
 
 app.get("/about", (req, res) => {
