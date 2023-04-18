@@ -25,8 +25,11 @@ app.get("/", (req, res) => {
 })
 
 app.get("/posts/:postId", (req, res) => {
+
+    const inputtedParam = req.params.postId;
+
     for(let i = 0; i < posts.length; i++){
-        if(req.params.postId === posts[i].title){
+        if(_.lowerCase(inputtedParam) === posts[i].title){
             console.log("match found")
         }
     }
