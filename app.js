@@ -52,6 +52,7 @@ app.get("/compose", (req, res) => {
     res.render("compose")
 })
 
+//POST route for COMPOSE page
 app.post("/compose", (req, res) => {
     
     const post = {
