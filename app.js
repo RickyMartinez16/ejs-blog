@@ -19,7 +19,7 @@ app.use(express.static("public"));
 let posts = []
 
 
-//-----------------------ROUTES---------------------------------//
+//------------------------------ROUTES---------------------------------//
 
 app.get("/", (req, res) => {
     //render the home ejs file
