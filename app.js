@@ -48,7 +48,7 @@ app.get("/contact", (req, res) => {
 })
 
 app.get("/compose", (req, res) => {
-    //render the contact ejs file
+    //render the compose ejs file
     res.render("compose")
 })
 
