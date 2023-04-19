@@ -18,6 +18,9 @@ app.use(express.static("public"));
 
 let posts = []
 
+
+//-----------------------ROUTES---------------------------------//
+
 app.get("/", (req, res) => {
     //render the home ejs file
     res.render("home", {homeContent: homeStartingContent, posts: posts})
